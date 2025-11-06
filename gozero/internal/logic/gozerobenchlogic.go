@@ -27,7 +27,9 @@ func NewGozero_benchLogic(ctx context.Context, svcCtx *svc.ServiceContext) *Goze
 }
 
 func (l *Gozero_benchLogic) Gozero_bench(req *types.Request) (resp *types.Response, err error) {
-	// todo: add your logic here and delete this line
+	resp = &types.Response{
+		Message: "my name is " + req.Name,
+	}
 
 	return
 }
