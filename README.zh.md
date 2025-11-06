@@ -17,11 +17,12 @@
 
 
 ### ben-reports下存放一些测试报告
-- 01.未经任何优化的腾讯云2C2G的Ecs的Benchmarks
-- 02.未经任何优化的阿里云2C2G的Ecs的benchmarks
-- 03.未经任何优化的腾讯云4C4G的Ecs的Benchmarks
-- 04.未经任何优化的腾讯云16C16G的Ecs的Benchmarks
-- 05.未经任何优化的腾讯云64C64G的Ecs的Benchmarks
-- 06.未经任何优化的阿里云64C64G的Ecs的Benchmarks
-- 07.如何优化腾讯云
-- 08.如何优化阿里云
+- 01.腾讯云2C2G的Ecs的Localhost(本地请求)Benchmarks
+- 02.阿里云2C2G的Ecs的Localhost(本地请求)Benchmarks
+- 03.腾讯云4C4G的Ecs的Localhost(本地请求)Benchmarks
+- 04.腾讯云4C4G的Ecs的同机房(同一城市同一地区)Benchmarks
+- 05.腾讯云16C16G的Ecs的同机房(同一城市同一地区)Benchmarks
+- 06.腾讯云64C64G的Ecs的同机房(同一城市同一地区)Benchmarks
+- 07.阿里云64C64G的Ecs的同机房(同一城市同一地区)Benchmarks
+- 08.如何优化腾讯云
+- 09.如何优化阿里云
