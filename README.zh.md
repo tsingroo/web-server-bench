@@ -15,7 +15,7 @@
 - hertz (go)
 - actix-web (Rust)
 - rocket (Rust)
-- pingora (Rust)
+- salvo (Rust)
 - zap (zig)
 - tokamak (zig)
 

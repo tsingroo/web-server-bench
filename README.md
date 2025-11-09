@@ -7,5 +7,5 @@
 - fiber (go)
 - actix-web (rust)
 - rocket (rust)
-- pingora (rust)
+- salvo (Rust)
 - koa (node.js)
