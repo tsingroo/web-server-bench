@@ -6,3 +6,5 @@ gozero_bench
 kratos_bench
 hertz_bench
 target
+.zig-cache
+zig-out
