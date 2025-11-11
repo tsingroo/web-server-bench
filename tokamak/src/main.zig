@@ -19,7 +19,7 @@ pub fn main() !void {
     const allocator = gpa.allocator();
     defer _ = gpa.deinit();
 
-    var server = try tk.Server.init(allocator, routes, .{ .listen = .{ .port = 9999 } });
+    var server = try tk.Server.init(allocator, routes, .{ .listen = .{ .port = 8080 } });
     defer server.deinit();
     try server.start();
 }
