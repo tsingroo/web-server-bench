@@ -117,6 +117,54 @@ func (x *HelloReply) GetMessage() string {
 	return ""
 }
 
+// The pong response
+type PongReply struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Message string `protobuf:"bytes,1,opt,name=message,proto3" json:"message,omitempty"`
+}
+
+func (x *PongReply) Reset() {
+	*x = PongReply{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_helloworld_v1_greeter_proto_msgTypes[2]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *PongReply) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*PongReply) ProtoMessage() {}
+
+func (x *PongReply) ProtoReflect() protoreflect.Message {
+	mi := &file_helloworld_v1_greeter_proto_msgTypes[2]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use PongReply.ProtoReflect.Descriptor instead.
+func (*PongReply) Descriptor() ([]byte, []int) {
+	return file_helloworld_v1_greeter_proto_rawDescGZIP(), []int{2}
+}
+
+func (x *PongReply) GetMessage() string {
+	if x != nil {
+		return x.Message
+	}
+	return ""
+}
+
 var File_helloworld_v1_greeter_proto protoreflect.FileDescriptor
 
 var file_helloworld_v1_greeter_proto_rawDesc = []byte{
