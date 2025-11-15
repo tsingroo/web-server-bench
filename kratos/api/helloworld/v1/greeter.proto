@@ -3,7 +3,6 @@ syntax = "proto3";
 package helloworld.v1;
 
 import "google/api/annotations.proto";
-import "google/protobuf/empty.proto";
 
 option go_package = "kratos_bench/api/helloworld/v1;v1";
 option java_multiple_files = true;
@@ -15,14 +14,21 @@ service Greeter {
   // Sends a greeting
   rpc SayHello (HelloRequest) returns (HelloReply) {
     option (google.api.http) = {
-      get: "/hello/{name}"
+      get: "/helloworld/{name}"
     };
   }
-  
-  // Ping interface
-  rpc Ping (google.protobuf.Empty) returns (PongReply) {
+
+  // Ping endpoint that returns pong
+  rpc Ping (PingRequest) returns (PingReply) {
     option (google.api.http) = {
       get: "/ping"
+    };
+  }
+
+  // Hello name endpoint that returns "my name is {name}"
+  rpc SayHelloName (HelloNameRequest) returns (HelloNameReply) {
+    option (google.api.http) = {
+      get: "/hello/{name}"
     };
   }
 }
@@ -37,7 +43,20 @@ message HelloReply {
   string message = 1;
 }
 
-// The pong response
-message PongReply {
+// The request message for ping
+message PingRequest {}
+
+// The response message for ping
+message PingReply {
+  string message = 1;
+}
+
+// The request message containing the name for hello endpoint
+message HelloNameRequest {
+  string name = 1;
+}
+
+// The response message containing the name response
+message HelloNameReply {
   string message = 1;
 }
