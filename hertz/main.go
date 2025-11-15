@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	hServer := server.Default()
+	hServer := server.Default(server.WithHostPorts(":8080"))
 
 	hServer.GET("/ping", func(ctx context.Context, c *app.RequestContext) {
 		c.String(consts.StatusOK, "pong")
