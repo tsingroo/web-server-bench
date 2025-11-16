@@ -29,7 +29,7 @@
 
 ### bench-reports下存放一些测试报告
 - 01.腾讯云2C2G的Ecs的Localhost(本地请求)Benchmarks
-- 02.腾讯云4C4G的Ecs的Localhost(本地请求)Benchmarks
+- 02.腾讯云2C2G的Ecs的同机房(同一城市同一地区)Benchmarks
 - 03.腾讯云4C4G的Ecs的同机房(同一城市同一地区)Benchmarks
 - 04.阿里云4C4G的Ecs的同机房(同一城市同一地区)Benchmarks
 - 05.腾讯云16C16G的Ecs的同机房(同一城市同一地区)Benchmarks
