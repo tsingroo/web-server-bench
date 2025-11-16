@@ -1,0 +1,10 @@
+gin_bench
+fiber_bench
+node_modules
+nethttp_bench
+gozero_bench
+kratos_bench
+hertz_bench
+target
+.zig-cache
+zig-out

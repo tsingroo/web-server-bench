@@ -1,0 +1,33 @@
+// Code scaffolded by goctl. Safe to edit.
+// goctl 1.9.2
+
+package logic
+
+import (
+	"context"
+
+	"gozero_bench/internal/svc"
+	"gozero_bench/internal/types"
+
+	"github.com/zeromicro/go-zero/core/logx"
+)
+
+type PingLogic struct {
+	logx.Logger
+	ctx    context.Context
+	svcCtx *svc.ServiceContext
+}
+
+func NewPingLogic(ctx context.Context, svcCtx *svc.ServiceContext) *PingLogic {
+	return &PingLogic{
+		Logger: logx.WithContext(ctx),
+		ctx:    ctx,
+		svcCtx: svcCtx,
+	}
+}
+
+func (l *PingLogic) Ping() (resp *types.Response, err error) {
+	resp = &types.Response{Message: "pong"}
+
+	return
+}
